@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Say Hello to My Little Website</title>
+  <meta name="description" content="Little page all about ol' me">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* Font and color styles */
+        h1, h2, h3 {
+      color: rgb(77, 213, 237);
+    }
+
+    h1, h2, h3 {
+      font-family: fantasy;
+    }
+
+    body {
+    font-family: 'Dosis', sans-serif;
+    color: rgb(22, 43, 43); /* Add semicolon here */
+    display: flex;
+    justify-content: center; /* Aligns items horizontally */
+    align-items: center; /* Aligns items vertically */
+    height: 100vh; /* Ensure full viewport height */
+    margin: 1; /* Remove default margin */
+    text-align: center; /* Centers the text inside child elements */
+}
+.container {
+  width: 80%; /* Set a width for the container */
+  max-width: 800px; /* Optional: Set a maximum width */
+}
+
+.highlight {
+  color: #43eb43; /* Sets the highlight color */
+}
+
+    .transparent-bg {
+  width: 100%;
+  height: 100%; /* Make it fill the whole viewport */
+  position: fixed; /* Fix the image to the background */
+  top: 0;
+  left: 0;
+  background-image: url('images/0010.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;  /* Adjust transparency as needed */
+  z-index: -1;   /* Make sure the background stays behind other content */
+}
+
+  /* Style for buttons */
+  .styled-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .styled-button:hover {
+    background-color: #555;
+  }
+
+  /* Icon styles */
+  .social-link {
+    font-size: 24px;
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .social-link:hover {
+    color: #555; /* Change color on hover */
+  }
+
+  /* Instagram-specific color */
+  .instagram {
+    color: #E1306C;
+  }
+
+  .profile-pic {
+width: 200px; /* or any desired size */
+height: 200px; /* height should be equal to width for a perfect circle */
+border-radius: 25%; /* This makes the edges fully rounded */
+object-fit: cover; /* Ensures the image covers the entire circle */
+}
+
+.my-photography {
+width: 500px; /* or any desired size */
+height: 500px; /* height should be equal to width for a perfect circle */
+border-radius: 0.8%; /* This makes the edges fully rounded */
+object-fit: cover; /* Ensures the image covers the entire circle */
+}
+  </style>
+
+  <!-- Google Fonts and FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="transparent-bg"></div>
+  <h1>Say Hello to My Little Website...</h1>
+  <img src="images/IMG_3151.jpeg" width="200px" alt="Liam Gingell" class="profile-pic">
+  <div class="container">
+    <h2>Liam Gingell</h2>
+    <h3>Aspiring Programmer</h3>
+    <p>Hiya and welcome to my little website!</p>
+    <p>I'm Liam from Scotland and I love art, music, history, photography, football <span class="highlight">(Glasgow Celtic)</span>, traveling to random places in Japan, and more.</p>
+
+    <img src="images/DSCF1786.jpg" width="700px" alt="Time slowed down" class="my-photography">
+    <div class="card">
+      <p>Here is an example of my kind of photography... <span class="highlight">slowed to perfection</span></p>
+      <button class="styled-button">Don't Click Me! (I do nothing yet...)</button>
+
+      <!-- Social links with hover effects -->
+      <a href="https://instagram.com/gentou_days" target="_blank" class="social-link instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/liamgingell" target="_blank" class="social-link">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

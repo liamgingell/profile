@@ -1,0 +1,83 @@
+/* Ensure body and html take up the full height of the viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.container {
+  width: 500px; /* or any width */
+  margin: 0 auto; /* This centers the element horizontally */
+}
+/* Transparent background that covers the entire page */
+.transparent-bg {
+  width: 100%;
+  height: 100%; /* Make it fill the whole viewport */
+  position: fixed; /* Fix the image to the background */
+  top: 0;
+  left: 0;
+  background-image: url('images/0010.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;  /* Adjust transparency as needed */
+  z-index: -2;   /* Make sure the background stays behind other content */
+}
+
+/* Font and color styles */
+h1, h2, h3 {
+  color: brown;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2, h3 {
+  font-family: fantasy;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  color: #333; /* General text color */
+  font-size: 21px;
+  text-align: center;
+}
+
+.highlight {
+  color: #139b13;
+}
+
+.styled-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+  background-color: #555;
+}
+
+.social-link {
+  font-size: 24px;
+  color: #333;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #555;
+}
+
+.instagram {
+  color: #E1306C;
+}
+
+.profile-pic {
+  width: 200px; /* or any desired size */
+  height: 200px; /* height should be equal to width for a perfect circle */
+  border-radius: 50%; /* This makes the edges fully rounded */
+  object-fit: cover; /* Ensures the image covers the entire circle */
+}
